@@ -13,7 +13,6 @@ class Session
 
     public function get($key)
     {
-
         $result = (isset($_SESSION[$key]))? $_SESSION[$key] : null ;
         return $result;
     }
@@ -23,4 +22,8 @@ class Session
         $_SESSION[$key] = $value;
     }
 
+    public function clear($key)
+    {
+        unset($_SESSION[$key]);
+    }
 }

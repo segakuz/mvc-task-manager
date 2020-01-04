@@ -2,6 +2,9 @@
 
 class View
 {
+    /**
+     * Given template
+     */
     private $template;
 
     public function __construct($template)
@@ -9,6 +12,9 @@ class View
         $this->template = $template;
     }
 
+    /**
+     * Renders view
+     */
     public function render($data=['data'=>null])
     {
         extract($data);

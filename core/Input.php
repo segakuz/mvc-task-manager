@@ -19,4 +19,9 @@ class Input
     {
         $this->input[$key] = $value;
     }
+
+    public function clear($key)
+    {
+        unset($this->input[$key]);
+    }
 }
